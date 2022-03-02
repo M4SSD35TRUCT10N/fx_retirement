@@ -39,7 +39,7 @@ fn main() {
     let mut taxes = 0.00;
     let mut payment_counter = 0;
 
-    let f = File::create(&file_name).expect("couldn'tn't create file");
+    let f = File::create(&file_name).expect("couldn't create file");
 
     writeln!(&f, "{}", format!("Starting capital is {:.2}€.", capital))
         .expect("couldn't write to file");
